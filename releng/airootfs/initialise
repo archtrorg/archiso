@@ -1,0 +1,56 @@
+# !/bin/bash
+#
+# Lution-AIS initialisation script (version 1.1 - December 2014)
+#
+# Written by Carl Duff for Evo/Lution Linux
+#
+# This script will automatically download the latest versions of the installer
+# from github before executing it.
+#
+# This program is free software, provided under the GNU General Public License
+# as published by the Free Software Foundation. So feel free to copy, distribute,
+# or modify it as you wish.
+#
+
+VERSION="Lution-AIS Initialisation Script 1.1"
+ANSWER="/tmp/.lution"
+
+# Check user is root, and that there is an active internet connection
+# Seperated the checks into seperate "if" statements for readability.
+# User then has option of the Stable or Development version of the installer.
+	
+  dialog --backtitle "$VERSION" --title " Archkur " --infobox "\nPlease wait... Lütfen bekleyin...\n" 0 0
+  sleep 2
+  
+  if [[ $(whoami) != "root" ]]; then
+     dialog --backtitle "$VERSION" --title " Error " --msgbox "\n- The installer must be run as root. \n- Yükleyici root olarak çalıştırılması gerekir.\n" 0 0
+     exit 1
+  fi
+  
+  if [[ ! $(ping -c 1 google.com) ]]; then
+     dialog --backtitle "$VERSION" --title " Error " --msgbox "\n- Internet connection test failed. \n- Internet bağlantı denemesi başarısız.\n" 0 0
+     exit 1
+  fi
+  
+  # Provided both tests above passed, then this menu will be available.
+  dialog --backtitle "$VERSION" --title " Installer Version " \
+  --menu $"\nPlease choose / Lütfen seçin \n\n1. Stable / Kararlı\n\n2. Development / Geliştirme\n" 20 50 2 \
+  "1" $"Stable" \
+  "2" $"Development" 2>${ANSWER}
+  
+  case $(cat ${ANSWER}) in
+       "1") # Stable Version
+            clear
+            wget -N https://github.com/archtrorg/lution-ais/archive/master.zip
+            ;;
+       "2") # Development Version
+            clear
+            wget -N https://github.com/Cumali1/lution-ais/archive/master.zip
+            ;;
+         *) exit 0
+            ;;
+  esac  	
+  
+  # Whatever the choice, same process to unzip and run.
+  unzip -o master.zip -d / 
+  /lution-ais-master/lution-ais
