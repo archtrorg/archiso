@@ -20,6 +20,8 @@ gnu-netcat
 gpm
 gptfdisk
 grml-zsh-config
+haveged
+intel-ucode
 grub
 hdparm
 ipw2100-fw
