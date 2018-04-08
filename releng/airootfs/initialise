@@ -45,7 +45,7 @@ ANSWER="/tmp/.lution"
             ;;
        "2") # Development Version
             clear
-            wget -N https://github.com/Cumali1/lution-ais/archive/master.zip
+            wget -N https://github.com/archtrorg/lution-ais/archive/master.zip
             ;;
          *) exit 0
             ;;
