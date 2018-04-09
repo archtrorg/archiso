@@ -37,8 +37,8 @@ gnome-keyring
 ##theme
 #numix-themes
 #papirus-icon-theme
-mate-themes
-
+#mate-themes
+numix-gtk-theme
 
 ##fonts
 ttf-dejavu
