@@ -11,3 +11,4 @@ Archkur CLI archiso build
  Archkur,EvoLutionLinux projesinin revize edilmiş halidir.Çeşitli hatalar giderilmiştir.Çoklu dil destegi kaldırılarak sadece İngilizce ve Türkçe dilinde kullanılır. https://github.com/EvoLutionLinux/archiso
  
  Archkur,saf Archlinux güncel paketleri ile çeşitli masaüstü ortamını kurmanıza olanak sağlar.
+Geniş bilgi için: https://www.archtr.org/forum/index.php
