@@ -5,6 +5,6 @@
 #
 SHELL=/bin/bash
 
-BROWSER=netsurf
+BROWSER=firefox
 
 EDITOR=leafpad
