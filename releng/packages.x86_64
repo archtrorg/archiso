@@ -1,12 +1,9 @@
 ##UEFI
-#gummiboot
-#prebootloader
 refind-efi
 
 ##xorg packages
 xorg-server 
 xorg-xinit 
-#xorg-server-utils
 
 ##video drivers
 mesa
