@@ -26,16 +26,14 @@ xf86-input-vmmouse
 xf86-input-mouse
 
 ##permissions
-gksu
+#gksu
 polkit
 polkit-gnome
 gnome-keyring
 
 ##theme
 #numix-themes
-#papirus-icon-theme
-#mate-themes
-numix-gtk-theme
+arc-icon-theme
 
 ##fonts
 ttf-dejavu
@@ -54,9 +52,24 @@ gparted
 hardinfo
 leafpad
 lxterminal
-netsurf
+#netsurf
 xterm
+firefox
+firefox-i18n-tr
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdg-utils
+gvfs
+gvfs-afc
+gvfs-smb
+gvfs-mtp
+gvfs-nfs
+gnome-screenshot
+thunar
 
 ##packages for installer
 hwinfo
 unzip
+
+##customrepo
+numix-themes
