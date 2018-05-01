@@ -66,6 +66,7 @@ gvfs-mtp
 gvfs-nfs
 gnome-screenshot
 thunar
+viewnior
 
 ##packages for installer
 hwinfo
