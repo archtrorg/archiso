@@ -325,7 +325,7 @@
     </keybind>
         <keybind key="A-g">
       <action name="Execute">
-        <command>netsurf http://archtr.org/forum/index.php</command>
+        <command>firefox http://archtr.org/forum/index.php</command>
       </action>
     </keybind>
         <keybind key="A-h">
