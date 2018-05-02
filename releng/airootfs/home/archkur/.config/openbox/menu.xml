@@ -8,7 +8,7 @@
 <action name="Execute"><command>lxterminal -e sudo /initialise</command></action>
   </item>
   <item label="Rehber">
-<action name="Execute"><command>netsurf http://archtr.org/forum/index.php</command></action>
+<action name="Execute"><command>firefox http://archtr.org/forum/index.php</command></action>
   </item>
   <item label="Donanım Bilgileri">
 <action name="Execute"><command>hardinfo</command></action>
