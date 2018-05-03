@@ -27,6 +27,7 @@ xf86-input-mouse
 
 ##permissions
 gksu
+libgksu
 polkit
 polkit-gnome
 gnome-keyring
