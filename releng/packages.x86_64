@@ -32,7 +32,7 @@ polkit-gnome
 gnome-keyring
 
 ##theme
-numix-themes
+mate-themes
 #arc-icon-theme
 
 ##fonts
