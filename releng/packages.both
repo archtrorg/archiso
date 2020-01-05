@@ -67,3 +67,5 @@ xl2tpd
 #zd1211-firmware
 git
 efibootmgr 
+networkmanager
+network-manager-applet
