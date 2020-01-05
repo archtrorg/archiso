@@ -41,12 +41,12 @@ ANSWER="/tmp/.lution"
   case $(cat ${ANSWER}) in
        "1") # Stable Version
             clear
-            wget -N https://github.com/archtrorg/aif-dev-1/archive/master.zip
+            wget -N https://github.com/archtrorg/lution-ais/archive/master.zip
 
             ;;
        "2") # Development Version
             clear
-            wget -N https://github.com/archtrorg/aif-dev-1/archive/master.zip
+            wget -N https://github.com/archtrorg/lution-ais/archive/master.zip
 
             ;;
          *) exit 0
