@@ -27,7 +27,7 @@ xf86-input-vmmouse
 #xf86-input-mouse
 
 ##permissions
-
+sudo
 polkit
 polkit-gnome
 gnome-keyring
