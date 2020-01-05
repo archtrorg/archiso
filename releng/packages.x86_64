@@ -1,5 +1,6 @@
 ##UEFI
 refind-efi
+efibootmgr 
 
 ##xorg packages
 xorg-server 
