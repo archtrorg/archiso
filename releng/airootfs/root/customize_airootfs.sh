@@ -21,4 +21,8 @@ sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
 systemctl enable pacman-init.service choose-mirror.service
 systemctl set-default multi-user.target
-systemctl enable NetworkManager
+#systemctl enable NetworkManager
+systemctl enable {haveged,pacman-init,NetworkManager}.service -f
+
+#systemctl enable NetworkManager
+
