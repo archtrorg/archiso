@@ -25,6 +25,7 @@ virtualbox-guest-modules-arch
 xf86-input-synaptics
 xf86-input-vmmouse
 #xf86-input-mouse
+dialog
 
 ##permissions
 sudo
