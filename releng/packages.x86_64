@@ -35,7 +35,7 @@ gnome-keyring
 
 ##theme
 mate-themes
-#arc-icon-theme
+arc-gtk-theme
 
 ##fonts
 ttf-dejavu
