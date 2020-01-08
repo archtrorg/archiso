@@ -9,7 +9,7 @@ dhclient
 dialog
 dmraid
 dnsmasq
-#dnsutils
+nano
 dosfstools
 elinks
 ethtool
